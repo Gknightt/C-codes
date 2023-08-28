@@ -1,33 +1,65 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
 
-int main() {
-  int num1, num2,what;
-  printf("Enter first integer number: ");
-    scanf("%d", &num1);
- 
- printf("Enter second integer number: ");
-    scanf("%d", &num2);
-    printf("Enter the number if you want it to: \n");
-    printf("1 multiply \n");
-    printf("2 divide \n");
-    printf("3 subtract \n");
-    printf("4 add \n");
-    scanf("%d", &what);
-    if (what==1) {
-        printf("the factor   is  %d.\n", num1*num2);
-    }
+int main()
+{
+ float num1,num2;
+  int sign;
+  char choice;
+  
+  
+    printf("\n\t Welcome to Calculator\n");
     
-    if (what==2) {
-        printf("the quotient  is  %d.\n", num1/num2);
-    }
+    printf("\n Enter your first number:");
+    scanf("%f", &num1);
     
-    if (what==3) {
-        printf("the difference is  %d.\n", num1-num2);
-    }
+   printf("\n Enter your second number:");
+   scanf("%f",&num2);
+   rawr:
+   printf("\n\n press 1 to add");
+   printf("\n press 2 to subtract");
+   printf("\n press 3 to divide");
+   printf("\n press 4 to multiply\n");
+   
+   printf("\n enter a number:");
+   
+   scanf("%d", &sign);
+   
+   
+   if(sign==1){
+   printf("\n\nthe sum is %.2f",num1+num2);
+   }
+   
+   if(sign==2){
+   printf("\n\nthe difference is %.2f",num1-num2);
+   }
+   
+  if(sign==3){
+   printf("\n\nthe quotient is %.2f",num1/num2);
+   }
+   
+  if(sign==4){
+   printf("\n\nthe factor is %.2f",num1*num2);
+   }
+   
+  if(sign<1 || sign>4){
+   printf("invalid input, please try again");
+   goto rawr;
+   }
+   
+   printf("\n\n Do you want to try again?\n press Y for yes and N for no:");
+   scanf(" %c",&choice);
+   
+     if(choice=='Y' || choice=='y'){
+   return main();
+   clrscr();
+   }
+   
+    if(choice=='N' || choice=='n'){
+   printf("\n\nThank you for using my calculator!");
+   return 0;
+   }
+   
     
-    if (what==4) {
-        printf("the sum is  %d.\n", num1+num2);
-    }
-    
-    return 0;
 }
