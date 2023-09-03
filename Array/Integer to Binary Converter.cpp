@@ -8,7 +8,7 @@ main(){
 
 //input integer
 
-printf("Enter an integer value: ");
+printf("Enter an decimal value: ");
 
 scanf("%d", &inte);
 
