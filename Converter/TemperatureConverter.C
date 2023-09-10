@@ -19,7 +19,7 @@
  float before,after; 
  
  
-  system("cls"); 
+  
   
  printf("1. Celsius to Kelvin\n"); 
  printf("2. Kelvin to Celsius\n"); 
@@ -45,6 +45,7 @@
     scanf(" %c",&choice); 
   
     if(choice=='Y' || choice=='y'){ 
+      system("cls"); 
     return main(); 
     } 
   
@@ -65,6 +66,7 @@
     scanf(" %c",&choice); 
   
     if(choice=='Y' || choice=='y'){ 
+      system("cls"); 
     return main(); 
     } 
   
@@ -85,6 +87,7 @@
     scanf(" %c",&choice); 
   
     if(choice=='Y' || choice=='y'){ 
+      system("cls"); 
     return main(); 
     } 
   
@@ -104,6 +107,7 @@
     scanf(" %c",&choice); 
   
     if(choice=='Y' || choice=='y'){ 
+      system("cls"); 
     return main(); 
     } 
   
@@ -123,6 +127,7 @@
     scanf(" %c",&choice); 
   
     if(choice=='Y' || choice=='y'){ 
+      system("cls"); 
     return main(); 
     } 
   
@@ -143,6 +148,7 @@
     scanf(" %c",&choice); 
   
     if(choice=='Y' || choice=='y'){ 
+      system("cls"); 
     return main(); 
     } 
   
@@ -158,9 +164,10 @@
      return main(); 
   
  } 
-     return 0; 
+     
  } 
   
+  //function definition
   
  float CelsiusToKelvin(float x,float kelv){  
      printf("Enter the Celsius: "); 
