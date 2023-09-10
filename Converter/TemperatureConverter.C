@@ -74,7 +74,7 @@ default:
 
 float CelsiusToKelvin(float x,float kelv){ 
     printf("Enter the Celsius: ");
-    scanf("%.2f,&x");
+    scanf("%f",&x);
    return kelv = x + 273.15;
  
 }
